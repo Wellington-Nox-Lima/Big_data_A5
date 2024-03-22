@@ -1,0 +1,82 @@
+# Passo a passo: de como fazer exemplos simples de como acessar dados em Python usando a biblioteca pandas" no Google Colab.
+# Neste exemplos como carregar um conjunto de dados no GitHub on-line, sem instalação local.
+Siga os passos abaixo:
+
+**Passo 1: Uso do GitHub Online (sem instalação local)**
+
+1.1. Acesse o site do GitHub em https://github.com/ e faça login na sua conta ou crie uma nova, se necessário.
+
+1.2. Após o login, você estará no seu painel (dashboard) do GitHub.
+
+1.3. Para criar um novo repositório, clique no botão "New" ou "Novo" no canto superior direito.
+
+1.4. Preencha o nome do repositório, uma descrição opcional e escolha a visibilidade (público ou privado).
+
+1.5. Clique em "Create repository" ou "Criar repositório".
+
+1.6. Agora você pode adicionar arquivos ao seu repositório diretamente no navegador. Clique no botão "Add file" ou "Adicionar arquivo" e escolha a opção "Upload files" ou "Enviar arquivos".
+
+1.7. Faça o upload dos arquivos que deseja adicionar ao repositório.
+
+**Passo 2: Acesso aos Dados do IBGE**
+
+2.1. Acesse o site do IBGE em https://www.ibge.gov.br/busca.html?searchword=*.csv.
+
+2.2. Use a barra de pesquisa para procurar pelos arquivos .csv que deseja.
+
+2.3. Clique no link para acessar o arquivo desejado.
+
+**Passo 3: Download do Arquivo do IBGE**
+
+3.1. A partir da página do arquivo no IBGE, encontre a opção de download e clique para baixar o arquivo.
+
+**Passo 4: Limpeza de Dados com uma Planilha Eletrônica**
+
+4.1. Abra uma planilha eletrônica, como o Microsoft Excel ou o Google Sheets.
+
+4.2. Importe o arquivo CSV baixado do IBGE para a planilha eletrônica.
+
+4.3. Realize a limpeza e manipulação de dados conforme necessário usando as ferramentas da planilha.
+
+4.4. Salve o arquivo após a limpeza.
+
+**Passo 5: Upload do Arquivo Tratado para o GitHub (Modo Online)**
+
+5.1. Acesse o repositório do GitHub que você criou no Passo 1.
+
+5.2. Clique no botão "Add file" ou "Adicionar arquivo" e escolha a opção "Upload files" ou "Enviar arquivos".
+
+5.3. Faça o upload do arquivo tratado que você salvou no Passo 4.
+
+**Passo 6: Acesso ao Google Colab para Análise de Dados**
+
+6.1. Acesse o Google Colab em https://colab.research.google.com/ e faça login com sua conta do Google.
+
+6.2. Crie um novo notebook ou abra um existente.
+
+6.3. Cole o código que você forneceu para carregar e analisar os dados do IBGE:
+
+### CONTINUE e ANALISE e CRIE OS GRAFICOS PARA ESSE DataSet com dados do IBGE no GitHub
+
+
+###########################################################
+7 (EXECUTE) - Exemplo - inicio da atividade
+```python
+import pandas as pd
+
+# URL do arquivo CSV com dados do IBGE no GitHub
+url = "https://raw.githubusercontent.com/Professor-Leonardo/temperatura/main/DataCidadeEstadoTemperatura.csv"
+# Carregar os dados em um DataFrame
+df = pd.read_csv(url, sep=';', encoding='ISO-8859-1')
+# Exibir as linhas do DataFrame usando display
+df.head()
+
+### CONTINUE E ATUALIZE O Código Python e CRIE OS GRAFICOS PARA ESSE DataSet com dados do IBGE no GitHub
+
+### FAÇA UPLOAD (das atividades) NA PASTA DO TEAMS [Entrega-Aula05]
+```
+
+Estes são os passos para realizar as tarefas. Certifique-se de que os arquivos e dados estejam de acordo com as políticas de uso do IBGE e do GitHub.
+
+- Texto Markdown e Código Python para Tópicos de Big Data em Python 
+- Professor Leonardo R.de Oliveira
